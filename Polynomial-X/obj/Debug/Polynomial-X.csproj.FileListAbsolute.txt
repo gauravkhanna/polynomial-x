@@ -1,0 +1,12 @@
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\Bin\Debug\Polynomial-X.dll
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\Bin\Debug\Polynomial-X.pdb
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\Bin\Debug\AppManifest.xaml
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\Bin\Debug\Polynomial_X.xap
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\obj\Debug\ResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\obj\Debug\App.g.i.cs
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\obj\Debug\MainPage.g.i.cs
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\obj\Debug\Polynomial-X.g.resources
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\obj\Debug\Polynomial-X.dll
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\obj\Debug\Polynomial-X.pdb
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\obj\Debug\XapCacheFile.xml
+c:\users\hp\documents\visual studio 2010\Projects\Polynomial-X\Polynomial-X\obj\Debug\about.g.i.cs

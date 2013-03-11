@@ -1,0 +1,69 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Polynomial_X.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="POLYNOMIAL-X" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="lets solve it!!" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,20,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="91" InputScope="CurrencyAmountAndSymbol"/>
+            <TextBlock Height="37" HorizontalAlignment="Left" Margin="90,44,0,0" Name="textBlock1" Text="x^7 +" VerticalAlignment="Top" Width="83" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,80,0,0" Name="textBox2" Text="" VerticalAlignment="Top" Width="91" InputScope="CurrencyAmountAndSymbol"/>
+            <TextBlock Height="37" HorizontalAlignment="Left" Margin="90,104,0,0" Name="textBlock2" Text="x^6 +" VerticalAlignment="Top" Width="83" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,140,0,0" Name="textBox3" Text="" VerticalAlignment="Top" Width="91" InputScope="CurrencyAmountAndSymbol"/>
+            <TextBlock Height="37" HorizontalAlignment="Left" Margin="90,164,0,0" Name="textBlock3" Text="x^5 +" VerticalAlignment="Top" Width="83" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,200,0,0" Name="textBox4" Text="" VerticalAlignment="Top" Width="91" InputScope="CurrencyAmountAndSymbol"/>
+            <TextBlock Height="37" HorizontalAlignment="Left" Margin="90,224,0,0" Name="textBlock4" Text="x^4 +" VerticalAlignment="Top" Width="83" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,260,0,0" Name="textBox5" Text="" VerticalAlignment="Top" Width="91" InputScope="CurrencyAmountAndSymbol"/>
+            <TextBlock Height="37" HorizontalAlignment="Left" Margin="90,284,0,0" Name="textBlock5" Text="x^3 +" VerticalAlignment="Top" Width="83" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,320,0,0" Name="textBox6" Text="" VerticalAlignment="Top" Width="91" InputScope="CurrencyAmountAndSymbol"/>
+            <TextBlock Height="37" HorizontalAlignment="Left" Margin="90,344,0,0" Name="textBlock6" Text="x^2 +" VerticalAlignment="Top" Width="83" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,380,0,0" Name="textBox7" Text="" VerticalAlignment="Top" Width="91" InputScope="CurrencyAmountAndSymbol"/>
+            <TextBlock Height="37" HorizontalAlignment="Left" Margin="90,404,0,0" Name="textBlock7" Text="x +" VerticalAlignment="Top" Width="83" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,440,0,0" Name="textBox8" Text="" VerticalAlignment="Top" Width="91" InputScope="CurrencyAmountAndSymbol"/>
+            <TextBlock Height="37" HorizontalAlignment="Left" Margin="90,464,0,0" Name="textBlock9" Text=" =   0" VerticalAlignment="Top" Width="83" />
+            <Button Content="Solve" Height="72" HorizontalAlignment="Left" Margin="269,77,0,0" Name="button1" VerticalAlignment="Top" Width="160" Click="button1_Click"/>
+            <TextBlock Height="177" HorizontalAlignment="Left" Margin="219,155,0,0" Name="textBlock10" Text="An empty input field would be considered as 0 (zero)." VerticalAlignment="Top" Width="210" TextWrapping="Wrap"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="219,260,0,0" Name="textBlock8" Text="Solution is:" VerticalAlignment="Top" Width="210" Visibility="Collapsed"/>
+            <TextBox Height="203" HorizontalAlignment="Left" Margin="207,286,0,0" Name="textBox9" Text="" VerticalAlignment="Top" Width="210" TextWrapping="Wrap" Visibility="Collapsed"/>
+            <Button Content="Reset" Height="72" HorizontalAlignment="Left" Margin="269,9,0,0" Name="button2" VerticalAlignment="Top" Width="160" Click="button2_Click"/>
+            <Button Content="About" Height="72" HorizontalAlignment="Left" Margin="33,518,0,0" Name="button3" VerticalAlignment="Top" Width="159" Click="button3_Click"/>
+            <Button Content="Rate app" Height="72" HorizontalAlignment="Left" Margin="247,518,0,0" Name="button4" VerticalAlignment="Top" Width="160" Click="button4_Click" />
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
