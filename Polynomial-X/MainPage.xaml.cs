@@ -19,11 +19,13 @@ namespace Polynomial_X
     {
         bool ans;
         bool inp;
+        float init;
         // Constructor
         public MainPage()
         {
             InitializeComponent();
             inp = true;
+            init = 0;
         }
         private void setzero()
         {
@@ -47,6 +49,10 @@ namespace Polynomial_X
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             setzero();
+            if (!textBlock10.Text.Equals(null))
+            {
+                init = float.Parse(textBlock10.Text.ToString());
+            }
             if (inp)
             {
                 float res = solve();
@@ -88,7 +94,7 @@ namespace Polynomial_X
         private float solve()
         {
             float[] coff=new float[8];
-            float x1 = 0;
+            float x1 = init;
             float fx1,f1x1;
             float c=0, fc;
             int count = 0;
